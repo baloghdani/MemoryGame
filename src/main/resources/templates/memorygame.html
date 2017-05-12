@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.springframework.org/shema/mvc">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="game.css"/>
+</head>
+<body>
+
+    <h1>WELCOME TO THE MEMORY GAME</h1>
+    <h1 id="timer"><time>00:00:00</time></h1>
+
+    <section class="pitch">
+       <div class="firstline">
+        <div class="card" id="card1"></div>
+        <div class="card" id="card2"></div>
+        <div class="card" id="card3"></div>
+        <div class="card" id="card4"></div>
+       </div>
+        <div class="secondline">
+        <div class="card" id="card5"></div>
+        <div class="card" id="card6"></div>
+        <div class="card" id="card7"></div>
+        <div class="card" id="card8"></div>
+        </div>
+        <div class="thirdline">
+        <div class="card" id="card9"></div>
+        <div class="card" id="card10"></div>
+        <div class="card" id="card11"></div>
+        <div class="card" id="card12"></div>
+        </div>
+        <div class="fourthline">
+        <div class="card" id="card13"></div>
+        <div class="card" id="card14"></div>
+        <div class="card" id="card15"></div>
+        <div class="card" id="card16"></div>
+        </div>
+    </section>
+
+    <button type="button" id="startbutton">START</button>
+
+
+<script th:src="@{/memo.js}"></script>
+</body>
+</html>
